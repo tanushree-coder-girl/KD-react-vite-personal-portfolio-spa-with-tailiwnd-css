@@ -46,7 +46,7 @@ export default function Hero(props: iProps) {
           <button className="btn_outlined mt-5"> Hire Me </button>
         </div>
 
-        <div className="md:h-[37rem] sm:h-100 h-96 select-none">
+        <div className="md:h-[37rem] md:h-100 h-96 select-none">
           <img
             src={`${
             activeColor === "yellow"
