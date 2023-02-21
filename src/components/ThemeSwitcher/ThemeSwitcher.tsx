@@ -25,7 +25,7 @@ export default function ThemeSwitcher(props: iProps) {
     >
       <div className="bg-white border-2 border-slate-200 p-2 cursor-pointer">
         <theme.settingWheel
-          className="md:text-3xl text-xl animate-spin"
+          className="md:text-2xl text-xl animate-spin"
           onClick={() => setshowPallet(!showPallet)}
         />
       </div>

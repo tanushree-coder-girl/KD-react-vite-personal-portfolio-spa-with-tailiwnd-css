@@ -10,7 +10,7 @@ export default function Navbar() {
     <div className="w-full flex justify-center">
       <div
         onClick={() => setShowMenu(!showMenu)}
-        className="fixed top-14 left-8 p-2 rounded-sm text-xl md:text-3xl text-bold bg-slate-200/60 z-[999] cursor-pointer"
+        className="fixed top-14 left-4 md:left-8 p-2 rounded-sm text-xl md:text-2xl text-bold bg-slate-200/60 z-[999] cursor-pointer"
       >
         {!showMenu ? <navbar.hamburger /> : <navbar.closeIcon />}
       </div>
