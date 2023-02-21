@@ -10,7 +10,7 @@ export default function Navbar() {
     <div className="w-full flex justify-center">
       <div
         onClick={() => setShowMenu(!showMenu)}
-        className="fixed top-14 left-8 p-2 rounded-sm text-3xl text-bold bg-slate-200/60 z-[999] cursor-pointer"
+        className="fixed top-14 left-8 p-2 rounded-sm text-xl md:text-3xl text-bold bg-slate-200/60 z-[999] cursor-pointer"
       >
         {!showMenu ? <navbar.hamburger /> : <navbar.closeIcon />}
       </div>
@@ -24,7 +24,7 @@ export default function Navbar() {
           <a key={navItem.id}
             href={navItem.link}
             onClick={() => setActiveLink(navItem.id)}
-            className={`text-xl p-2.5 rounded-full sm:cursor-pointer ${
+            className={`text-sm md:text-xl p-2.5 rounded-full sm:cursor-pointer ${
               activeLink === navItem.id ? "bg-dark_primary text-white" : ""
             }`}
           >

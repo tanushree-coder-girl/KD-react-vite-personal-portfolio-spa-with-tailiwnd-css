@@ -26,7 +26,7 @@ export default function Hero(props: iProps) {
               key={item.id}
               target="_blank"
               href={item.link}
-              className="duration-700 bg-lightBgColor hover:bg-yellow-300 text-slate-700 rounded-full p-3 text-xl"
+              className="duration-700 bg-lightBgColor hover:bg-yellow-300 text-slate-700 rounded-full p-3 text-md md:text-xl"
             >
               {<item.icon />}
             </a>
