@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paprika&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --main-bg-color: linear-gradient(180deg, #c9a60d99 0.48%, #ffbc007a 100%);
+    --rating-star: rgb(234 179 8 /1);
+  }
+  .blueTheme {
+    --main-bg-color: linear-gradient(180deg, #B6CCF5 0.48%, #D5E3F1 100%);
+    --rating-star: rgb(59 130 246 / 1);
+  }
+  .yellowTheme {
+    --main-bg-color: linear-gradient(180deg, #c9a60d99 0.48%, #ffbc007a 100%);
+    --rating-star: rgb(234 179 8 /1);
+  }
+  .pinkTheme {
+    --main-bg-color: linear-gradient(180deg, #ffb6c1, #ffb6c1);
+    --rating-star: rgb(236 72 153 /1);
+  }
+  .greenTheme {
+    --main-bg-color:linear-gradient(180deg, #a6d68b 0.48%, #a6d68b 100%);
+    --rating-star: rgb(34 197 94 /1);
+  }
+  .orangeTheme {
+    --main-bg-color:linear-gradient(180deg, #fd8d30 0.48%, #fd8d30 100%);
+    --rating-star: rgb(249 115 22 /1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    @apply text-dark_primary;
+  }
+  h1 {
+    @apply font-Poppins xl:text-6xl md:text-4xl text-3xl font-extrabold;
+  }
+  h2 {
+    @apply font-Inria text-5xl font-bold;
+  }
+  h3 {
+    @apply font-Paprika text-xl md:text-7xl;
+  }
+  h4 {
+    @apply md:text-4xl text-3xl !leading-relaxed font-Paprika;
+  }
+  h6 {
+    @apply font-Paprika font-bold text-[#253D57] leading-8;
+  }
+
+  p {
+    @apply font-Poppins text-[0.95rem];
+  }
+  button {
+    @apply font-Poppins;
+  }
+  input,
+  textarea {
+    @apply bg-transparent outline-none font-Poppins;
+  }
+}
+
+@layer utilities {
+  .btn_outlined {
+    @apply py-2 px-9 border-2 rounded-md
+     border-dark_primary rounded-tl-xl font-medium transition-all duration-500 hover:border-2 hover:border-slate-200/60 hover:bg-slate-200/60;
+  }
+  .btn_contained {
+    @apply py-2 px-9 border-2 rounded-md
+    border-dark_primary rounded-tl-xl font-medium bg-dark_primary text-white;
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  border: 2px solid #08223f;
+  padding: 1.5rem;
+  border-radius: 50%;
+  
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 20px;
+  color:  #08223f;
+
+}
+.ReactModal__Body--open {
+  background-color: rgba(255, 255, 255) !important;
+}
+.swiper, swiper-container {
+  z-index: 0;
+}
+.swiper-button-next, .swiper-button-prev{
+  z-index: 0;
+}
