@@ -15,10 +15,12 @@ export default function App() {
   const [activeColor, setActiveColor] = useState("");
 
   useEffect(() => {
-    const activeTheme = localStorage.getItem("selectedTheme");
-    const parseTheme = JSON.parse(activeTheme || "");
-    if (parseTheme) {
-      setActiveColor(parseTheme);
+    if (localStorage.getItem("selectedTheme")) {
+      const activeTheme = localStorage.getItem("selectedTheme");
+      const parseTheme = JSON.parse(activeTheme || "");
+      if (parseTheme) {
+        setActiveColor(parseTheme);
+      }
     }
   }, []);
 

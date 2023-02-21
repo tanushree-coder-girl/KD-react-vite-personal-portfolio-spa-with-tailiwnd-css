@@ -21,11 +21,11 @@ export const content = {
   theme: {
     settingWheel: AiTwotoneSetting,
     switchers: [
-      { id: 1, value: 'yellow' },
-      { id: 2, value: 'blue' },
-      { id: 3, value: 'pink' },
-      { id: 4, value: 'green' },
-      { id: 5, value: 'orange' }
+      { id: 1, value: 'yellow', color:'bg-yellow-500' },
+      { id: 2, value: 'blue', color:'bg-blue-500' },
+      { id: 3, value: 'pink', color:'bg-pink-500' },
+      { id: 4, value: 'green', color:'bg-green-500' },
+      { id: 5, value: 'orange', color:'bg-orange-500' }
     ]
   },
   navbar: {
