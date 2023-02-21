@@ -23,7 +23,7 @@ export default function ThemeSwitcher(props: iProps) {
         !showPallet ? "-right-[200px] md:-right-[245px]" : "right-0"
       } top-10 flex z-[999] items-center justify-center`}
     >
-      <div className="bg-white border-2 border-slate-200 p-2 cursor-pointer">
+      <div className="bg-white md:h-[48px] h-auto flex items-center p-2 border-2 border-slate-200  cursor-pointer">
         <theme.settingWheel
           className="md:text-2xl text-xl animate-spin"
           onClick={() => setshowPallet(!showPallet)}
