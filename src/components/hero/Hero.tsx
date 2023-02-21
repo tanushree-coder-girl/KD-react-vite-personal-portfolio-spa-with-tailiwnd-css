@@ -12,7 +12,7 @@ export default function Hero(props: iProps) {
     <section id="home">
       <div className="min-h-screen relative flex lg:flex-row flex-col-reverse lg:items-end justify-center items-center">
         <div className="absolute h-full  lg:w-4/12 w-6/12 top-0 right-0 bg-lightBgColor bottom-0 -z-10">
-          <h1 className="rotate-90 absolute top-[40%] md:right-[-15%] right-[-110px] text-[#EAF2FA] select-none">
+          <h1 className="rotate-90 absolute top-[40%] md:right-[-24%] right-[-138px] sm:right-[-110px] text-[#EAF2FA] select-none">
             {home.bannerText}{" "}
             <span className="text-dark_primary">{home.bannerTextSpan}</span>
           </h1>
@@ -46,7 +46,7 @@ export default function Hero(props: iProps) {
           <button className="btn_outlined mt-5"> Hire Me </button>
         </div>
 
-        <div className="md:h-[37rem] md:h-100 h-96 select-none">
+        <div className="md:h-[37rem] sm:h-100 h-92 select-none">
           <img
             src={`${
             activeColor === "yellow"

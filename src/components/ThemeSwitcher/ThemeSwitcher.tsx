@@ -20,12 +20,12 @@ export default function ThemeSwitcher(props: iProps) {
   return (
     <div
       className={`transition-all duration-700 fixed ${
-        !showPallet ? "-right-[245px]" : "right-0"
+        !showPallet ? "-right-[200px] md:-right-[245px]" : "right-0"
       } top-10 flex z-[999] items-center justify-center`}
     >
       <div className="bg-white border-2 border-slate-200 p-2 cursor-pointer">
         <theme.settingWheel
-          className="text-3xl animate-spin"
+          className="md:text-3xl text-xl animate-spin"
           onClick={() => setshowPallet(!showPallet)}
         />
       </div>
@@ -36,7 +36,7 @@ export default function ThemeSwitcher(props: iProps) {
         {theme?.switchers?.map((colors) => (
           <div
             key={colors.id}
-            className={`rounded-full ${colors.color} h-8 w-8`}
+            className={`rounded-full ${colors.color} h-6 w-6 md:h-8 md:w-8`}
             data-id={colors.value}
           ></div>
         ))}
