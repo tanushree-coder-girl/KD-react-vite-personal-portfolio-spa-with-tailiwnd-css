@@ -17,7 +17,7 @@ const Testimonials = () => {
        
       <Heading title={testimonials.title} subtitle={testimonials.subtitle} />
 
-        <div className="flex gap-4 mt-12 justify-center flex-col md:flex-row">
+        <div className="flex gap-4 mt-12 justify-center flex-col md:flex-row" data-aos="fade-up">
           <div
             className="bg-white sm:cursor-pointer 
        relative group flex items-center
@@ -100,7 +100,7 @@ const Testimonials = () => {
               </div>
             </div>
 
-            <div className="relative w-[90%] md:w-[50%]">
+            <div className="relative w-[90%] lg:w-[50%]">
               <div className="swiper-button-next"> </div>
               <div className="swiper-button-prev "> </div>
             </div>

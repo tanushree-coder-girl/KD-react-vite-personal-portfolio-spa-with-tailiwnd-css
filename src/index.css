@@ -58,7 +58,7 @@
     @apply font-Inria text-5xl font-bold;
   }
   h3 {
-    @apply font-Paprika text-xl md:text-7xl;
+    @apply font-Paprika text-xl lg:text-7xl;
   }
   h4 {
     @apply md:text-4xl text-3xl !leading-relaxed font-Paprika;

@@ -8,9 +8,11 @@ export default function Portfolio(props: iProps) {
 
   return (
     <div
-      className="relative overflow-hidden bg-no-repeat bg-cover w-full max-w-sm  h-[264px] cursor-pointer"
+      className="relative overflow-hidden bg-no-repeat bg-cover  w-[100%] sm:w-[80%] md:w-[45%] xl:w-[28%]  h-[264px] cursor-pointer"
       data-mdb-ripple="true"
       data-mdb-ripple-color="light"
+      data-aos="fade-down"
+    data-aos-delay={data.id * 200}
     >
       <img
         className="object-cover h-[100%] w-[100%] overflow-hidden"

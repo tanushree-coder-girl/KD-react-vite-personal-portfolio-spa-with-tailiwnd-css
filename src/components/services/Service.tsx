@@ -7,9 +7,11 @@ export default function Service(props:iProps) {
     const {service} = props;
   return (
     <div
+    data-aos="fade-down"
+    data-aos-delay={service.id * 200}
       className="bg-white sm:cursor-pointer 
-       relative group w-full flex items-center
-        gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
+       relative group flex items-center
+        gap-5 p-5  w-[100%] sm:w-[80%] md:w-[45%] xl:w-[28%]  rounded-md border-2 border-slate-200"
     >
       
       <div>

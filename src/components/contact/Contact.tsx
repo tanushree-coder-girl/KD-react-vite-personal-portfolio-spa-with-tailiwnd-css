@@ -12,8 +12,8 @@ export default function Contact() {
       
       <Heading title={contact.title} subtitle={contact.subtitle} />
 
-        <div className="flex md:gap-3 gap-10 justify-center md:flex-row flex-col-reverse items-center my-5">
-          <div className="md:w-[40%] gap-5 flex flex-col">
+        <div data-aos="fade-up" className="flex lg:gap-3 gap-10 justify-center lg:flex-row flex-col-reverse items-center my-5">
+          <div className="w-full lg:w-[40%] gap-5 flex flex-col">
             {
               contact.contact_info.map((info, index)=>(
                 <ContactInfo key={index} info={info} />
@@ -21,7 +21,7 @@ export default function Contact() {
             }
 
           </div>
-          <div className="md:w-[50%]">
+          <div className="w-full lg:w-[50%]">
             <ContactForm />
           </div>
         </div>

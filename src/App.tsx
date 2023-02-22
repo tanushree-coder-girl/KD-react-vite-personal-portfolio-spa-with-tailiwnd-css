@@ -8,13 +8,22 @@ import Services from "./components/services/Services";
 import Skills from "./components/skills/Skills";
 import Testimonials from "./components/testimonials/Testimonials";
 import ThemeSwitcher from "./components/ThemeSwitcher/ThemeSwitcher";
-
+import { ToastContainer } from "react-toastify";
 import { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function App() {
   const [activeColor, setActiveColor] = useState("");
 
   useEffect(() => {
+
+    Aos.init({
+      duration: 1800,
+      offset: 100,
+      disable: "mobile",
+    });
+
     if (localStorage.getItem("selectedTheme")) {
       const activeTheme = localStorage.getItem("selectedTheme");
       const parseTheme = JSON.parse(activeTheme || "");
@@ -39,8 +48,9 @@ export default function App() {
          : activeColor === "orange"
          ? "orangeTheme"
          : ""
-     }`}
+     } `}
     >
+      <ToastContainer/>
       <ThemeSwitcher setActiveColor={setActiveColor} />
       <Navbar />
       <Hero activeColor={activeColor} />
